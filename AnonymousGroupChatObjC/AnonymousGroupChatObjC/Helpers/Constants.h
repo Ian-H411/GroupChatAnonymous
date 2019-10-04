@@ -18,6 +18,8 @@ extern NSString * const userProfilePictureKey;
 
 extern NSString * const userAppleIDKey;
 
+extern NSString * const userBlockedByList;
+
 @end
 
 NS_ASSUME_NONNULL_END

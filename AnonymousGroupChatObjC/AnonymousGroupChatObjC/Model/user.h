@@ -19,11 +19,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,nullable) NSData *profilePic;
 
-@property (nonatomic) NSArray *chatRooms;
+@property (nonatomic) NSMutableArray *chatRooms;
 
 @property (nonatomic) CKRecordID *ckrecordID;
 
-@property (nonatomic) NSString *appleID;
+@property (nonatomic, readonly) NSString *appleID;
+
+@property (nonatomic) NSMutableArray *blockedByList;
 
 - (instancetype) initWithName: (NSString *) name appleUserID:(NSString *) appleUserID;
 
@@ -31,10 +33,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @end
-
-@interface UserToRecord : CKRecord
-
-@end
+//
+//@interface CKRecord (user)
+//
+//- (instancetype) initWithUser:(user *) user;
+//
+//@end
 
 
 NS_ASSUME_NONNULL_END

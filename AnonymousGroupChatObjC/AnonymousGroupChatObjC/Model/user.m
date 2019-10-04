@@ -16,7 +16,7 @@
     if (self) {
         NSString * uuid = [[NSUUID UUID] UUIDString];
         _userName = name;
-        _chatRooms = [NSArray alloc];
+        _chatRooms = [NSMutableArray alloc];
         _profilePic = NULL;
         _ckrecordID = [[CKRecordID alloc] initWithRecordName: uuid];
         _appleID = appleUserID;
@@ -29,10 +29,11 @@
     self = [super init];
     if (self){
         _userName = record[userRecordTypeKey];
-        _chatRooms = [NSArray alloc];
+        _chatRooms = [NSMutableArray alloc];
         _profilePic = record[userProfilePictureKey];
         _ckrecordID = record.recordID;
         _appleID = record[userAppleIDKey];
+        NSString * listAsReference = record[userBlockedByList]
         
     }
     return self;
@@ -41,9 +42,15 @@
 
 
 @end
-
-@implementation  (UserToRecord);
-
-<#methods#>
-
-@end
+//
+//@implementation CKRecord (user);
+//
+//- (instancetype)initWithUser:(user *)user
+//{
+//    self = [super init];
+//    if (self){
+//        ck
+//    }
+//}
+//
+//@end
