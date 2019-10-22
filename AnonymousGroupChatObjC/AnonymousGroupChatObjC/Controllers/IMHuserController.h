@@ -16,22 +16,17 @@ NS_ASSUME_NONNULL_BEGIN
 + (IMHuserController *) shared;
 
 //source of truth
-- (user *) currentUser;
-
-//apple id to find the user profile
-- (NSString *) appleUserID;
+@property (nonatomic) user * currentUser;
 
 //to be used the first time upon creating a users profile
 - (void) createInitialUser;
 
 //save that user to the cloud
-- (void) saveUserToCloud;
+- (void) saveUserToFirebase;
 
 //retrieve user from cloud
-- (void) retrieveUserFromCloud;
+- (void) retrieveUserFromFireBase;
 
-//func to retireve their user
-- (void) retrieveUsersAppleIDFromCloud;
 
 @end
 

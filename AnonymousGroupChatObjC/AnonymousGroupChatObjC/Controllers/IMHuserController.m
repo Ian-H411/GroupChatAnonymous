@@ -10,4 +10,28 @@
 
 @implementation IMHuserController
 
++ (IMHuserController *)shared;
+{
+    static IMHuserController *shared = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        shared = [IMHuserController new];
+    });
+    return shared;
+}
+
+- (void)createInitialUser
+{
+    
+}
+
+- (void)retrieveUserFromFireBase
+{
+    
+}
+
+- (void)saveUserToFirebase
+{
+    
+}
 @end

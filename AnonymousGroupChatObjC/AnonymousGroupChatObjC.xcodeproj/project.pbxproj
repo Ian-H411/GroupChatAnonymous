@@ -19,6 +19,8 @@
 		256810372346E71E00629AEA /* ChatRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 256810362346E71E00629AEA /* ChatRoom.m */; };
 		2568103B2346EC4900629AEA /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2568103A2346EC4900629AEA /* Constants.m */; };
 		2568103E234798BA00629AEA /* IMHuserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2568103D234798BA00629AEA /* IMHuserController.m */; };
+		25C306F1235FB44500BB90B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25C306F0235FB44500BB90B6 /* GoogleService-Info.plist */; };
+		F021CFABC5BBEADFCF4A6508 /* Pods_AnonymousGroupChatObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 898B79E1480C4C48C9BC9DA8 /* Pods_AnonymousGroupChatObjC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,10 @@
 		2568103A2346EC4900629AEA /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		2568103C234798BA00629AEA /* IMHuserController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMHuserController.h; sourceTree = "<group>"; };
 		2568103D234798BA00629AEA /* IMHuserController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMHuserController.m; sourceTree = "<group>"; };
+		25C306F0235FB44500BB90B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2E519E1D0F079ABE144132BD /* Pods-AnonymousGroupChatObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnonymousGroupChatObjC.debug.xcconfig"; path = "Target Support Files/Pods-AnonymousGroupChatObjC/Pods-AnonymousGroupChatObjC.debug.xcconfig"; sourceTree = "<group>"; };
+		898B79E1480C4C48C9BC9DA8 /* Pods_AnonymousGroupChatObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnonymousGroupChatObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C593134075FDEBE019FF8D9C /* Pods-AnonymousGroupChatObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnonymousGroupChatObjC.release.xcconfig"; path = "Target Support Files/Pods-AnonymousGroupChatObjC/Pods-AnonymousGroupChatObjC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,18 +58,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				256810342346E69000629AEA /* CloudKit.framework in Frameworks */,
+				F021CFABC5BBEADFCF4A6508 /* Pods_AnonymousGroupChatObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D9CB5808DD8189906A9EA16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E519E1D0F079ABE144132BD /* Pods-AnonymousGroupChatObjC.debug.xcconfig */,
+				C593134075FDEBE019FF8D9C /* Pods-AnonymousGroupChatObjC.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		256810032346E47E00629AEA = {
 			isa = PBXGroup;
 			children = (
 				2568100E2346E47E00629AEA /* AnonymousGroupChatObjC */,
 				2568100D2346E47E00629AEA /* Products */,
 				256810322346E69000629AEA /* Frameworks */,
+				1D9CB5808DD8189906A9EA16 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +146,7 @@
 				256810212346E47F00629AEA /* main.m */,
 				256810132346E47E00629AEA /* SceneDelegate.m */,
 				2568101B2346E47F00629AEA /* Assets.xcassets */,
+				25C306F0235FB44500BB90B6 /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -145,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				256810332346E69000629AEA /* CloudKit.framework */,
+				898B79E1480C4C48C9BC9DA8 /* Pods_AnonymousGroupChatObjC.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 256810252346E47F00629AEA /* Build configuration list for PBXNativeTarget "AnonymousGroupChatObjC" */;
 			buildPhases = (
+				17DA85CAC13AAA2216E8E476 /* [CP] Check Pods Manifest.lock */,
 				256810082346E47E00629AEA /* Sources */,
 				256810092346E47E00629AEA /* Frameworks */,
 				2568100A2346E47E00629AEA /* Resources */,
+				A1CE8C2CD58C39D134E910C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,12 +238,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				2568101F2346E47F00629AEA /* LaunchScreen.storyboard in Resources */,
+				25C306F1235FB44500BB90B6 /* GoogleService-Info.plist in Resources */,
 				2568101C2346E47F00629AEA /* Assets.xcassets in Resources */,
 				2568101A2346E47E00629AEA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17DA85CAC13AAA2216E8E476 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnonymousGroupChatObjC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1CE8C2CD58C39D134E910C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnonymousGroupChatObjC/Pods-AnonymousGroupChatObjC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnonymousGroupChatObjC/Pods-AnonymousGroupChatObjC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnonymousGroupChatObjC/Pods-AnonymousGroupChatObjC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		256810082346E47E00629AEA /* Sources */ = {
@@ -373,6 +438,7 @@
 		};
 		256810262346E47F00629AEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E519E1D0F079ABE144132BD /* Pods-AnonymousGroupChatObjC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AnonymousGroupChatObjC/AnonymousGroupChatObjC.entitlements;
@@ -391,6 +457,7 @@
 		};
 		256810272346E47F00629AEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C593134075FDEBE019FF8D9C /* Pods-AnonymousGroupChatObjC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AnonymousGroupChatObjC/AnonymousGroupChatObjC.entitlements;

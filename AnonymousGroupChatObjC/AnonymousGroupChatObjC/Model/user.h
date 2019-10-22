@@ -21,24 +21,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) NSMutableArray *chatRooms;
 
-@property (nonatomic) CKRecordID *ckrecordID;
-
-@property (nonatomic, readonly) NSString *appleID;
-
 @property (nonatomic) NSMutableArray *blockedByList;
 
-- (instancetype) initWithName: (NSString *) name appleUserID:(NSString *) appleUserID;
+- (instancetype) initWithName: (NSString *) name;
 
-- (instancetype) initWithRecord:(CKRecord *) record;
 
 
 @end
-//
-//@interface CKRecord (user)
-//
-//- (instancetype) initWithUser:(user *) user;
-//
-//@end
 
 
 NS_ASSUME_NONNULL_END
