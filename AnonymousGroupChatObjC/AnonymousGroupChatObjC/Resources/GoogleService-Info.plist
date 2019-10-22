@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1074436756990-f79p5ervumi68eto133pa5t0se0idjbs.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1074436756990-f79p5ervumi68eto133pa5t0se0idjbs</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDudP5R9rVVcsW8FzQrSdrMMett35LHt4Y</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1074436756990</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.IanH411.AnonymousGroupChatObjC</string>
+	<key>PROJECT_ID</key>
+	<string>whoschat-820e6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>whoschat-820e6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1074436756990:ios:7fa6a5fa41eb5eade39caf</string>
+	<key>DATABASE_URL</key>
+	<string>https://whoschat-820e6.firebaseio.com</string>
+</dict>
+</plist>

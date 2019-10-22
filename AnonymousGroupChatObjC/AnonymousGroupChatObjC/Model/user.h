@@ -19,20 +19,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,nullable) NSData *profilePic;
 
-@property (nonatomic) NSArray *chatRooms;
+@property (nonatomic) NSMutableArray *chatRooms;
 
-@property (nonatomic) CKRecordID *ckrecordID;
+@property (nonatomic) NSMutableArray *blockedByList;
 
-@property (nonatomic) NSString *appleID;
-
-- (instancetype) initWithName: (NSString *) name appleUserID:(NSString *) appleUserID;
-
-- (instancetype) initWithRecord:(CKRecord *) record;
+- (instancetype) initWithName: (NSString *) name;
 
 
-@end
-
-@interface UserToRecord : CKRecord
 
 @end
 

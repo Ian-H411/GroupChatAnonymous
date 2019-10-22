@@ -16,4 +16,6 @@ NSString * const userProfilePictureKey = @"ProfilePic";
 
 NSString * const userAppleIDKey = @"appleID";
 
+NSString * const userBlockedByList = @"BlockedBy";
+
 @end
