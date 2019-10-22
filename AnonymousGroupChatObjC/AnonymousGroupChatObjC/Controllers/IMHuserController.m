@@ -9,7 +9,7 @@
 #import "IMHuserController.h"
 
 @implementation IMHuserController
-
+//shared instance
 + (IMHuserController *)shared;
 {
     static IMHuserController *shared = nil;
@@ -18,6 +18,16 @@
         shared = [IMHuserController new];
     });
     return shared;
+}
+
+//initializer
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _databaseReference = [[FIRDatabase database] reference];
+    }
+    return self;
 }
 
 - (void)createInitialUser
