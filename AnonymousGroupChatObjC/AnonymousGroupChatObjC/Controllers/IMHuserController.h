@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "user.h"
+@import Firebase;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface IMHuserController : NSObject
@@ -15,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 //singleton
 + (IMHuserController *) shared;
 
+@property (nonatomic, readonly, strong) FIRDatabaseReference * databaseReference;
 //source of truth
 @property (nonatomic) user * currentUser;
 

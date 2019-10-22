@@ -7,5 +7,6 @@ target 'AnonymousGroupChatObjC' do
 
   # Pods for AnonymousGroupChatObjC
 pod 'Firebase/Analytics'
+pod 'Firebase/Database'
 
 end
