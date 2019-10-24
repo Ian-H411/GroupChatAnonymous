@@ -18,7 +18,6 @@ extern NSString * const userChatRooms;
 
 extern NSString * const userProfilePictureKey;
 
-
 @end
 
 NS_ASSUME_NONNULL_END
