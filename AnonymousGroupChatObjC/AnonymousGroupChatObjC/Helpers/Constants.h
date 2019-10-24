@@ -12,13 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Constants : NSObject
 
-extern NSString * const userRecordTypeKey;
+extern NSString * const userNameKey;
+
+extern NSString * const userChatRooms;
 
 extern NSString * const userProfilePictureKey;
 
-extern NSString * const userAppleIDKey;
-
-extern NSString * const userBlockedByList;
 
 @end
 
