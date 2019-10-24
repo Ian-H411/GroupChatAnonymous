@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ChatRoom : NSObject
 
+@property (nonatomic, readonly) NSString *chatRoomID;
+
+-(instancetype)init;
+
 @end
 
 NS_ASSUME_NONNULL_END

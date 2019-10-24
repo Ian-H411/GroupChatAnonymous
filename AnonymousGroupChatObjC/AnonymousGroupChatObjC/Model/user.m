@@ -16,9 +16,10 @@
         _userName = name;
         _chatRooms = [NSMutableArray alloc];
         _profilePic = NULL;
-        _dictionary = @{}
+        _dictionary = [NSDictionary alloc];
     }
     return self;
+    
 }
 
 @end

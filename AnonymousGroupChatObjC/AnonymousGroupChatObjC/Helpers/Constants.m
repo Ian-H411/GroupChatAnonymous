@@ -10,12 +10,11 @@
 
 @implementation Constants
 
-NSString *const userRecordTypeKey = @"User";
 
 NSString * const userProfilePictureKey = @"ProfilePic";
 
-NSString * const userAppleIDKey = @"appleID";
+NSString * const userNameKey = @"userName";
 
-NSString * const userBlockedByList = @"BlockedBy";
+NSString * const userChatRooms = @"userChatRoomIDs";
 
 @end

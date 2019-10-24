@@ -10,4 +10,16 @@
 
 @implementation ChatRoom
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        CFUUIDRef uuidRef = CFUUIDCreate(NULL);
+//           _chatRoomID = CFUUIDCreateString(NULL, uuidRef);
+//           CFRelease(uuidRef);
+//           _chatRoomID = [(NSString *)uuidStringRef autorelease];
+    }
+    return self;
+}
+
 @end
